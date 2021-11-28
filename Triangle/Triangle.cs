@@ -15,10 +15,11 @@ namespace Triangle
         {
             string workingDirectory = Environment.CurrentDirectory;
             string path= Path.Combine(Directory.GetParent(workingDirectory).Parent.FullName, @"Triangle\", @"Triangle.txt");
+            //whole to a single string
             string text = File.ReadAllText(path);
 
+            /* split and input on 2d array*/
             
-
             var Triangle = text.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
        
                 .Select(line => line.Trim()
