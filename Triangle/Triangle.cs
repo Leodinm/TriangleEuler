@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Triangle
 {
-    class Tree
+    class Triangle
     {
         public   int  SumTriangle()
 

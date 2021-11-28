@@ -10,7 +10,7 @@ namespace Triangle
     {
         static void Main(string[] args)
         {
-            Tree mytree = new Tree();
+            Triangle mytree = new Triangle();
             Console.WriteLine("Sum best path is {0}", mytree.SumTriangle());
             Console.ReadLine();
 
