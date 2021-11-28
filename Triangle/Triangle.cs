@@ -26,7 +26,7 @@ namespace Triangle
                     .Split(' ')
                     .Select(s => int.Parse(s.Trim()))
                     .ToArray())
-                .ToArray();
+               .ToArray();
 
             return SumTree(Triangle);
 
@@ -37,8 +37,6 @@ namespace Triangle
         // elements just below the number 
         // and below right to the number 
         // add the maximum of them to it 
-
-
 
         private int SumTree(int[][] Triangle)
         {
@@ -54,18 +52,11 @@ namespace Triangle
 
                     else
                         Triangle[i][ j] += Triangle[i + 1][ j + 1];
-
-
-
                 }
             }
-            return Triangle[0][0];
+                   return Triangle[0][0];
 
-        }
-
-     
-
-       
+        }    
 
     }
 }
